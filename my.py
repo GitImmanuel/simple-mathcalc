@@ -31,7 +31,7 @@ if choose == 1:
 			print("That is not a digit.")
 	#If the choose is not 1 or 2.
 	else:
-		print("You don't choose 1 or 2.")
+		print("You didn't choose 1 or 2.")
 
 #PYTHAGOREAN
 elif choose == 2:
@@ -63,7 +63,7 @@ elif choose == 2:
 			print("That is not a digit.")
 	#If the choose is not 1 or 2.
 	else:
-		print("You don't choose 1 or 2.")
+		print("You didn't choose 1 or 2.")
 #ELSE
 else:
-	print("You don't choose one of the options.")
+	print("You didn't choose one of the options.")
