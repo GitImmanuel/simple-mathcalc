@@ -6,6 +6,7 @@ print("In this calculator are different ways to choose, like calculating with ke
 print(" - Typ 1 for calculating with celsius and kelvin.")
 print(" - Typ 2 for calculating with Pythagorean.")
 print(" - Typ 3 for calculating with m/s and km/h.")
+print(" - Typ 4 for calculating with a table.")
 choose = int(input("Typ here your choose: "))
 
 #KELVIN
@@ -83,6 +84,21 @@ elif choose == 3:
 			print("That is not a digit")
 	else:
 		print("You didn't choose 1 or 2.")
+
+#TABLE
+elif choose == 4:
+	print("Enter the values in the sum. To get the unknown variable.")
+	te = input("Typ the first value, of the table: ")
+	te1 = input("Typ the second value, of the table: ")
+
+	#sum
+	if te.isdigit() and te1.isdigit():
+		te2 = input("Typ the last value: ")
+		sumans = int(te) * int(te1)
+		te2sum = int(sumans) / int(te2)
+		print(te2sum)
+	else:
+		print("You didn't enter a value.")
 #ELSE
 else:
 	print("You didn't choose one of the options.")
