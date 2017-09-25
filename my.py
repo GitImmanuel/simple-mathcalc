@@ -5,6 +5,7 @@ import math
 print("In this calculator are different ways to choose, like calculating with kelvin and celsius or Pythagorean. You need to choose a number for the calculator that you want to use:")
 print(" - Typ 1 for calculating with celsius and kelvin.")
 print(" - Typ 2 for calculating with Pythagorean.")
+print(" - Typ 3 for calculating with m/s and km/h.")
 choose = int(input("Typ here your choose: "))
 
 #KELVIN
@@ -35,7 +36,6 @@ if choose == 1:
 
 #PYTHAGOREAN
 elif choose == 2:
-	#Begin
 	print("Do you want to know the tilt side typ 1, or the straight side typ 2.")
 	pt = int(input("Typ here your choose (1/2): "))
 
@@ -61,7 +61,26 @@ elif choose == 2:
 			print('Your straight side is', ansstraight)
 		else:
 			print("That is not a digit.")
-	#If the choose is not 1 or 2.
+#KM-M
+elif choose == 3:
+	print("Do you want to get from km/h to m/s (choose 1) or from m/s to km/h (choose 2)")
+	km = int(input("Typ here your choose (1/2): "))
+
+	#km/h to m/s
+	if km == 1:
+		kmtoms = input("Typ the km/h: ")
+		if kmtoms.isdigit():
+			kmans = int(kmtoms) / 3.6
+			print(kmans, 'm/s')
+		else:
+			print("That is not a digit")
+	elif km == 2:
+		mstokm = input("Typ the m/s: ")
+		if mstokm.isdigit():
+			msans = int(mstokm) * 3.6
+			print(msans, 'km/h')
+		else:
+			print("That is not a digit")
 	else:
 		print("You didn't choose 1 or 2.")
 #ELSE
