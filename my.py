@@ -3,16 +3,16 @@ import math
 
 #prints
 print("In this calculator are different ways to choose, like calculating with kelvin and celsius or Pythagorean. You need to choose a number for the calculator that you want to use:")
-print(" - Typ 1 for calculating with celsius and kelvin.")
-print(" - Typ 2 for calculating with Pythagorean.")
-print(" - Typ 3 for calculating with m/s and km/h.")
-print(" - Typ 4 for calculating with a table.")
-choose = int(input("Typ here your choose: "))
+print(" - Type '1' to calculate with celsius and kelvin.")
+print(" - Type '2' to calculate with Pythagorean.")
+print(" - Type '3' to calculate with m/s and km/h.")
+print(" - Type '4' to calculate with a table.")
+choose = int(input("Type your choice here: "))
 
 #KELVIN
 if choose == 1:
 	#Begin
-	print("Do want to get from celsius to kelvin typ 1, do you want to get from kelvin to celsius typ 2.")
+	print("If you want to calculate from Celsuis to Kelvin type '1';  if you want to calculate from Kelvin to Celsius type '2'")
 	kc = int(input("Typ here your choose (1/2): "))
 
 	#Celsius to kelvin
